@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kept</title>
+<style>
+  :root {
+    --ground: #F2F0EC; --ink: #14171A; --ink-2: #4C545C; --dim: #767E88;
+    --rule: rgba(20,23,26,0.12); --accent: #8A5300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0C0E11; --ink: #F0EFEC; --ink-2: #98A0A8; --dim: #59606A;
+      --rule: rgba(255,255,255,0.09); --accent: #FFB443;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex; align-items: center; justify-content: center; min-height: 100vh;
+  }
+  main { max-width: 34rem; padding: 3rem 1.25rem; }
+  h1 {
+    font-size: clamp(2.5rem, 12vw, 3.5rem); letter-spacing: -0.03em;
+    margin: 0 0 1rem; font-weight: 800;
+  }
+  p { color: var(--ink-2); margin: 0 0 1.5rem; }
+  nav { display: flex; flex-wrap: wrap; gap: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .support { color: var(--dim); font-size: 0.9375rem; margin-top: 2rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kept</h1>
+  <p>A fixed-length daily challenge, kept honestly: six requirements a day, one progress photograph, and a record you own — stored on your iPhone, sent nowhere.</p>
+  <nav>
+    <a href="./privacy/">Privacy Policy</a>
+    <a href="./terms/">Terms of Use</a>
+  </nav>
+  <p class="support">Support: <a href="mailto:neil.camm@gmail.com">neil.camm@gmail.com</a></p>
+</main>
+</body>
+</html>
